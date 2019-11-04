@@ -16,7 +16,7 @@ $(function() {
 <body>
 
 <div id="control">
-<div style="display:none;" class="start">Select the sound you want to practise</div>
+<div style="display:none;" class="start">Select the sound you want to practise, and then press Start</div>
 <div style="display:none;" class="stop">Choose the correct sound you heard</div>
 <a style="display:none;" class="start" href="javascript:ongame.start()">Start</a>
 <a style="display:none;" class="stop" href="javascript:ongame.stop()">Stop</a>
@@ -27,128 +27,123 @@ $(function() {
 
 <div id="allon">
 <ul id="set1">
-<li class="on" style="grid-column: 1"><span>あ</span><audio><source src="mp3/a.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>い</span><audio><source src="mp3/i.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>う</span><audio><source src="mp3/u.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>え</span><audio><source src="mp3/e.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>お</span><audio><source src="mp3/o.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>か</span><audio><source src="mp3/ka.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>き</span><audio><source src="mp3/ki.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>く</span><audio><source src="mp3/ku.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>け</span><audio><source src="mp3/ke.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>こ</span><audio><source src="mp3/ko.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>あ</span><audio><source src="on/a.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>い</span><audio><source src="on/i.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>う</span><audio><source src="on/u.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>え</span><audio><source src="on/e.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>お</span><audio><source src="on/o.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>か</span><audio><source src="on/ka.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>き</span><audio><source src="on/ki.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>く</span><audio><source src="on/ku.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>け</span><audio><source src="on/ke.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>こ</span><audio><source src="on/ko.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 6"><span>が</span><audio><source src="mp3/ga.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 7"><span>ぎ</span><audio><source src="mp3/gi.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 8"><span>ぐ</span><audio><source src="mp3/gu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 9"><span>げ</span><audio><source src="mp3/ge.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 10"><span>ご</span><audio><source src="mp3/go.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 6"><span>が</span><audio><source src="on/ga.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 7"><span>ぎ</span><audio><source src="on/gi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 8"><span>ぐ</span><audio><source src="on/gu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 9"><span>げ</span><audio><source src="on/ge.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 10"><span>ご</span><audio><source src="on/go.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 1"><span>さ</span><audio><source src="mp3/sa.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>し</span><audio><source src="mp3/si.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>す</span><audio><source src="mp3/su.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>せ</span><audio><source src="mp3/se.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>そ</span><audio><source src="mp3/so.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>さ</span><audio><source src="on/sa.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>し</span><audio><source src="on/shi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>す</span><audio><source src="on/su.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>せ</span><audio><source src="on/se.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>そ</span><audio><source src="on/so.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 6"><span>ざ</span><audio><source src="mp3/za.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 7"><span>じ</span><audio><source src="mp3/zi.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 8"><span>ず</span><audio><source src="mp3/zu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 9"><span>ぜ</span><audio><source src="mp3/ze.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 10"><span>ぞ</span><audio><source src="mp3/zo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 6"><span>ざ</span><audio><source src="on/za.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 7"><span>じ</span><audio><source src="on/zi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 8"><span>ず</span><audio><source src="on/zu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 9"><span>ぜ</span><audio><source src="on/ze.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 10"><span>ぞ</span><audio><source src="on/zo.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 1"><span>た</span><audio><source src="mp3/ta.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>ち</span><audio><source src="mp3/ci.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>つ</span><audio><source src="mp3/cu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>て</span><audio><source src="mp3/te.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>と</span><audio><source src="mp3/to.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>た</span><audio><source src="on/ta.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>ち</span><audio><source src="on/chi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>つ</span><audio><source src="on/tsu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>て</span><audio><source src="on/te.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>と</span><audio><source src="on/to.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 6"><span>だ</span><audio><source src="mp3/da.mp3" type="audio/mpeg"></audio></li>
-<!--
-<li class="on" style="grid-column: 7"><span>ぢ</span><audio><source src="mp3/di.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 8"><span>づ</span><audio><source src="mp3/du.mp3" type="audio/mpeg"></audio></li>
--->
-<li class="on" style="grid-column: 9"><span>で</span><audio><source src="mp3/de.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 10"><span>ど</span><audio><source src="mp3/do.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 6"><span>だ</span><audio><source src="on/da.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 7"><span>ぢ</span><audio><source src="on/di.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 8"><span>づ</span><audio><source src="on/du.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 9"><span>で</span><audio><source src="on/de.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 10"><span>ど</span><audio><source src="on/do.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 1"><span>な</span><audio><source src="mp3/na.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>に</span><audio><source src="mp3/ni.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ぬ</span><audio><source src="mp3/nu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>ね</span><audio><source src="mp3/ne.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>の</span><audio><source src="mp3/no.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>な</span><audio><source src="on/na.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>に</span><audio><source src="on/ni.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ぬ</span><audio><source src="on/nu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>ね</span><audio><source src="on/ne.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>の</span><audio><source src="on/no.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 1"><span>は</span><audio><source src="mp3/ha.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>ひ</span><audio><source src="mp3/hi.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ふ</span><audio><source src="mp3/hu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>へ</span><audio><source src="mp3/he.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>ほ</span><audio><source src="mp3/ho.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>は</span><audio><source src="on/ha.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>ひ</span><audio><source src="on/hi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ふ</span><audio><source src="on/hu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>へ</span><audio><source src="on/he.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>ほ</span><audio><source src="on/ho.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 6"><span>ば</span><audio><source src="mp3/ba.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 7"><span>び</span><audio><source src="mp3/bi.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 8"><span>ぶ</span><audio><source src="mp3/bu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 9"><span>べ</span><audio><source src="mp3/be.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 10"><span>ぼ</span><audio><source src="mp3/bo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 6"><span>ば</span><audio><source src="on/ba.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 7"><span>び</span><audio><source src="on/bi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 8"><span>ぶ</span><audio><source src="on/bu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 9"><span>べ</span><audio><source src="on/be.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 10"><span>ぼ</span><audio><source src="on/bo.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 1"><span>ま</span><audio><source src="mp3/ma.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>み</span><audio><source src="mp3/mi.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>む</span><audio><source src="mp3/mu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>め</span><audio><source src="mp3/me.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>も</span><audio><source src="mp3/mo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ま</span><audio><source src="on/ma.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>み</span><audio><source src="on/mi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>む</span><audio><source src="on/mu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>め</span><audio><source src="on/me.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>も</span><audio><source src="on/mo.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 6"><span>ぱ</span><audio><source src="mp3/pa.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 7"><span>ぴ</span><audio><source src="mp3/pi.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 8"><span>ぷ</span><audio><source src="mp3/pu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 9"><span>ぺ</span><audio><source src="mp3/pe.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 10"><span>ぽ</span><audio><source src="mp3/po.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 6"><span>ぱ</span><audio><source src="on/pa.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 7"><span>ぴ</span><audio><source src="on/pi.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 8"><span>ぷ</span><audio><source src="on/pu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 9"><span>ぺ</span><audio><source src="on/pe.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 10"><span>ぽ</span><audio><source src="on/po.mp3" type="audio/mpeg"></audio></li>
 
-<li class="on" style="grid-column: 1"><span>や</span><audio><source src="mp3/ya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ゆ</span><audio><source src="mp3/yu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>よ</span><audio><source src="mp3/yo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>ら</span><audio><source src="mp3/ra.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>り</span><audio><source src="mp3/ri.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>る</span><audio><source src="mp3/ru.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 4"><span>れ</span><audio><source src="mp3/re.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 5"><span>ろ</span><audio><source src="mp3/ro.mp3" type="audio/mpeg"></audio></li>
-
-<li class="on" style="grid-column: 1"><span>わ</span><audio><source src="mp3/wa.mp3" type="audio/mpeg"></audio></li>
-<!--
-<li class="on" style="grid-column: 5"><span>を</span><audio><source src="mp3/o.mp3" type="audio/mpeg"></audio></li>
--->
-<li class="on" style="grid-column: 1"><span>ん</span><audio><source src="mp3/n.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>や</span><audio><source src="on/ya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ゆ</span><audio><source src="on/yu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>よ</span><audio><source src="on/yo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ら</span><audio><source src="on/ra.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>り</span><audio><source src="on/ri.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>る</span><audio><source src="on/ru.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 4"><span>れ</span><audio><source src="on/re.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>ろ</span><audio><source src="on/ro.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>わ</span><audio><source src="on/wa.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 5"><span>を</span><audio><source src="on/wo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ん</span><audio><source src="on/n.mp3" type="audio/mpeg"></audio></li>
 </ul>
 <ul id="set2">
-<li class="on" style="grid-column: 1"><span>きゃ</span><audio><source src="mp3/kya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>きゅ</span><audio><source src="mp3/kyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>きょ</span><audio><source src="mp3/kyo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>しゃ</span><audio><source src="mp3/sya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>しゅ</span><audio><source src="mp3/syu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>しょ</span><audio><source src="mp3/syo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>ちゃ</span><audio><source src="mp3/cya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>ちゅ</span><audio><source src="mp3/cyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ちょ</span><audio><source src="mp3/cyo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>にゃ</span><audio><source src="mp3/nya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>にゅ</span><audio><source src="mp3/nyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>にょ</span><audio><source src="mp3/nyo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>ひゃ</span><audio><source src="mp3/hya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>ひゅ</span><audio><source src="mp3/hyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ひょ</span><audio><source src="mp3/hyo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>みゃ</span><audio><source src="mp3/mya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>みゅ</span><audio><source src="mp3/myu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>みょ</span><audio><source src="mp3/myo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>りゃ</span><audio><source src="mp3/rya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>りゅ</span><audio><source src="mp3/ryu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>りょ</span><audio><source src="mp3/ryo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>ぎゃ</span><audio><source src="mp3/gya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>ぎゅ</span><audio><source src="mp3/gyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ぎょ</span><audio><source src="mp3/gyo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>じゃ</span><audio><source src="mp3/zya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>じゅ</span><audio><source src="mp3/zyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>じょ</span><audio><source src="mp3/zyo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>びゃ</span><audio><source src="mp3/bya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>びゅ</span><audio><source src="mp3/byu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>びょ</span><audio><source src="mp3/byo.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 1"><span>ぴゃ</span><audio><source src="mp3/pya.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 2"><span>ぴゅ</span><audio><source src="mp3/pyu.mp3" type="audio/mpeg"></audio></li>
-<li class="on" style="grid-column: 3"><span>ぴょ</span><audio><source src="mp3/pyo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>きゃ</span><audio><source src="on/kya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>きゅ</span><audio><source src="on/kyu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>きょ</span><audio><source src="on/kyo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>しゃ</span><audio><source src="on/sha.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>しゅ</span><audio><source src="on/shu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>しょ</span><audio><source src="on/sho.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ちゃ</span><audio><source src="on/ja.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>ちゅ</span><audio><source src="on/ju.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ちょ</span><audio><source src="on/jo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>にゃ</span><audio><source src="on/nya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>にゅ</span><audio><source src="on/nyu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>にょ</span><audio><source src="on/nyo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ひゃ</span><audio><source src="on/hya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>ひゅ</span><audio><source src="on/hyu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ひょ</span><audio><source src="on/hyo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>みゃ</span><audio><source src="on/mya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>みゅ</span><audio><source src="on/myu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>みょ</span><audio><source src="on/myo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>りゃ</span><audio><source src="on/rya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>りゅ</span><audio><source src="on/ryu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>りょ</span><audio><source src="on/ryo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ぎゃ</span><audio><source src="on/gya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>ぎゅ</span><audio><source src="on/gyu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ぎょ</span><audio><source src="on/gyo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>じゃ</span><audio><source src="on/ja.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>じゅ</span><audio><source src="on/ju.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>じょ</span><audio><source src="on/jo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>びゃ</span><audio><source src="on/bya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>びゅ</span><audio><source src="on/byu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>びょ</span><audio><source src="on/byo.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 1"><span>ぴゃ</span><audio><source src="on/pya.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 2"><span>ぴゅ</span><audio><source src="on/pyu.mp3" type="audio/mpeg"></audio></li>
+<li class="on" style="grid-column: 3"><span>ぴょ</span><audio><source src="on/pyo.mp3" type="audio/mpeg"></audio></li>
 </ul>
 </div>
 

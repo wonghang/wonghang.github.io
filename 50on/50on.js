@@ -1,3 +1,13 @@
+$.fn.my_play_audio = function() {
+  try {
+    var oo = this.find("audio").get(0);
+    oo.currentTime = 0;
+    oo.play();
+  }
+  catch(e) {}
+
+  return this;
+}
 var OnGame = function() {
   this.running = false;
   this.switch_stop();
@@ -60,7 +70,7 @@ OnGame.prototype.stop = function() {
 }
 OnGame.prototype.repeat = function() {
   if(this.state == 1) {
-    this.last_obj.find("audio").get(0).play();
+    this.last_obj.my_play_audio();
   }
 }
 OnGame.prototype.select_all = function() {
@@ -83,6 +93,7 @@ OnGame.prototype.click_handler = function(on_obj) {
     else {
       on_obj.addClass("selected");
     }
+    on_obj.my_play_audio();
   }
   else if(this.state == 1) {
     let txt = on_obj.find("span").text();
