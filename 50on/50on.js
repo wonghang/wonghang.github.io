@@ -58,7 +58,7 @@ OnGame.prototype.play = function() {
 ///
 OnGame.prototype.start = function() {
   var n = $(".selected").length;
-  if(n < 2) alert("You should select at least two sound");
+  if(n < 2) alert("Please select at least two sound.");
   else {
     this.switch_start();
     this.play();
