@@ -79,6 +79,7 @@ OnGame.prototype.repeat = function() {
 OnGame.prototype.select_all = function() {
   if(!this.running) {
     $(".on").addClass("selected");
+    $(".duplicated").removeClass("selected");
   }
 }
 OnGame.prototype.unselect_all = function() {
