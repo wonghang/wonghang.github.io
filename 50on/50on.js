@@ -34,14 +34,19 @@ OnGame.prototype.switch_start = function() {
   this.running = true;
   $("#control > .start").hide();
   $("#control > .stop").show();
+  $(".on").hide();
+  $(".selected").show();
+/*
   $(".on").css('visibility','hidden');
   $(".selected").css('visibility','visible');
+*/
 }
 OnGame.prototype.switch_stop = function() {
   this.running = false;
   $("#control > .start").show();
   $("#control > .stop").hide();
-  $(".on").css('visibility','visible');
+  $(".on").show();
+//  $(".on").css('visibility','visible');
 }
 OnGame.prototype.play = function() {
   var sel = $(".selected");
