@@ -16,4 +16,8 @@ li {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  user-select: none;
+}
+li.selected {
+  background-color: #ccf;
 }

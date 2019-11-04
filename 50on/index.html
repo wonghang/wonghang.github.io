@@ -16,9 +16,13 @@ $(function() {
 <body>
 
 <div id="control">
-<a style="display:none;" id="play" href="javascript:ongame.play()">Play</a>
-<a style="display:none;" id="repeat" href="javascript:ongame.repeat()">Repeat</a>
-<span style="display:none;" id="select">Select the correct one</span>
+<span style="display:none;" class="start">Select the sound you want to practise</span>
+<span style="display:none;" class="state1">Choose the correct sound you heard</span>
+<a style="display:none;" class="start" href="javascript:ongame.start()">Start</a>
+<a style="display:none;" class="stop" href="javascript:ongame.stop()">Stop</a>
+<a style="display:none;" class="state1" href="javascript:ongame.repeat()">Repeat</a>
+<a style="display:none;" class="state0" href="javascript:ongame.select_all()">Select All</a>
+<a style="display:none;" class="state0" href="javascript:ongame.unselect_all()">Unselect All</a>
 </div>
 
 <ul id="set1">
@@ -67,8 +71,9 @@ $(function() {
 <li class="on" style="grid-column: 5"><span>ろ</span><audio><source src="mp3/ro.mp3" type="audio/mpeg"></audio></li>
 
 <li class="on" style="grid-column: 1"><span>わ</span><audio><source src="mp3/wa.mp3" type="audio/mpeg"></audio></li>
+<!--
 <li class="on" style="grid-column: 5"><span>を</span><audio><source src="mp3/o.mp3" type="audio/mpeg"></audio></li>
-
+-->
 <li class="on" style="grid-column: 1"><span>ん</span><audio><source src="mp3/n.mp3" type="audio/mpeg"></audio></li>
 
 <li class="on" style="grid-column: 1"><span>が</span><audio><source src="mp3/ga.mp3" type="audio/mpeg"></audio></li>
@@ -82,8 +87,10 @@ $(function() {
 <li class="on" style="grid-column: 4"><span>ぜ</span><audio><source src="mp3/ze.mp3" type="audio/mpeg"></audio></li>
 <li class="on" style="grid-column: 5"><span>ぞ</span><audio><source src="mp3/zo.mp3" type="audio/mpeg"></audio></li>
 <li class="on" style="grid-column: 1"><span>だ</span><audio><source src="mp3/da.mp3" type="audio/mpeg"></audio></li>
+<!--
 <li class="on" style="grid-column: 2"><span>ぢ</span><audio><source src="mp3/di.mp3" type="audio/mpeg"></audio></li>
 <li class="on" style="grid-column: 3"><span>づ</span><audio><source src="mp3/du.mp3" type="audio/mpeg"></audio></li>
+-->
 <li class="on" style="grid-column: 4"><span>で</span><audio><source src="mp3/de.mp3" type="audio/mpeg"></audio></li>
 <li class="on" style="grid-column: 5"><span>ど</span><audio><source src="mp3/do.mp3" type="audio/mpeg"></audio></li>
 <li class="on" style="grid-column: 1"><span>ば</span><audio><source src="mp3/ba.mp3" type="audio/mpeg"></audio></li>
