@@ -24,13 +24,15 @@ OnGame.prototype.switch_start = function() {
   this.running = true;
   $("#control > .start").hide();
   $("#control > .stop").show();
+  $(".on").css('visibility','hidden');
+  $(".selected").css('visibility','visible');
 }
 OnGame.prototype.switch_stop = function() {
   this.running = false;
   $("#control > .start").show();
   $("#control > .stop").hide();
+  $(".on").css('visibility','visible');
 }
-
 OnGame.prototype.play = function() {
   if(this.state == 0) {
     var sel = $(".selected");
