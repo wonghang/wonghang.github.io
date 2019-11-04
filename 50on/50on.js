@@ -44,16 +44,14 @@ OnGame.prototype.switch_stop = function() {
   $(".on").css('visibility','visible');
 }
 OnGame.prototype.play = function() {
-  if(this.state == 0) {
-    var sel = $(".selected");
-    var n = sel.length;
-    var idx = Math.floor(Math.random() * n);
-    var obj = sel.eq(idx);
-    this.last_obj = obj;
-    this.last_txt = obj.find("span").text();
-    this.switch_state(1);
-    this.repeat();
-  }
+  var sel = $(".selected");
+  var n = sel.length;
+  var idx = Math.floor(Math.random() * n);
+  var obj = sel.eq(idx);
+  this.last_obj = obj;
+  this.last_txt = obj.find("span").text();
+  this.switch_state(1);
+  this.repeat();
 }
 ///
 OnGame.prototype.start = function() {
@@ -103,7 +101,6 @@ OnGame.prototype.click_handler = function(on_obj) {
     else {
       alert("Wrong. The sound is " + this.last_txt);
     }
-    this.switch_state(0);
     var x = this;
     setTimeout(function() { x.play(); },100);
   }
